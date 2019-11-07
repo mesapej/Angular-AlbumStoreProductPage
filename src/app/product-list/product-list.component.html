@@ -1,9 +1,9 @@
 <ul>
   <li *ngFor = "let product of products"
   >
-  {{product.id}}
+   <a routerLink="/product/{{product.id}}" routerLinkActive="active">{{product.id}}
   {{product.artistName}}
   {{product.albumName}}
-
+</a>
   </li>
 </ul>
